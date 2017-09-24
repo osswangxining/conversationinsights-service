@@ -1,0 +1,8666 @@
+{
+  "common_examples": [
+    {
+      "text": "hello",
+      "intent": "greet",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "greet",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greet",
+      "entities": []
+    },
+    {
+      "text": "你好",
+      "intent": "greet",
+      "entities": []
+    },
+    {
+      "text": "moderately priced restaurant that serves creative food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "creative",
+          "start": 41,
+          "end": 49
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "moderately priced restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 36,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 24,
+          "end": 29
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 53,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "venetian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "ok what about indian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "cheap",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "on the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant welsh food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "welsh",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "british",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "scandinavian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "scandinavian",
+          "start": 0,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "asian oriental",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "expensive restaurant east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 21,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "looking for an expensive restaurant that serves afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 48,
+          "end": 54
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 15,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "how about an expensive restaurant that serves european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 46,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "text": "looking for a cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 38,
+          "end": 42
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 14,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "looking for a moderately priced restaurant that serves brazilian",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 14,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "how bout asian oriental",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "east noise",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "noise anything expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "id like a restaurant in the north part of town that serves cross over food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "how about chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "id like a greek restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 34,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "id like an expensive thai restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 11,
+          "end": 20
+        },
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 21,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "id like a cheap restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 34,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "i would like a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 51,
+          "end": 55
+        }
+      ]
+    },
+    {
+      "text": "i would like european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 13,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "can i get a restaurant with vegetarian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vegetarian",
+          "start": 28,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "how about turkish",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "moderate priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "west",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "scottish",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "caribbean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "caribbean",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "modern european",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "spanish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "moderately priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "east",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "south",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "chinese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "malaysian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "mediterranean",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "north",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "moderately priced restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 36,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 0,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "danish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "danish",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "spanish",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "brazilian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "brazilian",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "korean",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant that serves turkish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "turkish",
+          "start": 40,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "polish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "polish",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "how about italian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "moderate",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for mexican food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "mexican",
+          "start": 18,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant and it should be served international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 63,
+          "end": 76
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant and it should serve international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 59,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "text": "system european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 7,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "text": "i want to find a cheap restaurant and it should be in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 58,
+          "end": 62
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant and it should be the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 60,
+          "end": 64
+        }
+      ]
+    },
+    {
+      "text": "im looking for moderately priced restaurant and it should serve halal food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 15,
+          "end": 25
+        },
+        {
+          "entity": "cuisine",
+          "value": "halal",
+          "start": 64,
+          "end": 69
+        }
+      ]
+    },
+    {
+      "text": "asian oriental type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 0,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "im looking for greek food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "how about european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 10,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant and it should serve asian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "is there a restaurant that has british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 31,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "how about persian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "persian",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "how about british type food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant and it should be in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 63,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant and it should serve polynesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "polynesian",
+          "start": 66,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "text": "how about indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "id like to find an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 19,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "in the east part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "corsica",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "uh indian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "the east part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "i need a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "um english",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "i need a restaurant serving corsica food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "corsica",
+          "start": 28,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "i need indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 7,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "i need a moderate priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 9,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "lets see im looking for a restaurant in the north part of town that serves vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 44,
+          "end": 49
+        },
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 75,
+          "end": 85
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 46,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "serves british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 7,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "find moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 41,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "find a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "thai",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "polynesian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "expensive restaurant scottish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "entity": "cuisine",
+          "value": "scottish",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "text": "british expensive",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "moderate restaurant south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 20,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "moderate price west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "i am looking for a cheap restaurant and it should be in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 60,
+          "end": 64
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 19,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "i would like to find a restaurant in the center and it should serve korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 68,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves russian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "russian",
+          "start": 40,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "how about mediterranean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "mediterranean",
+          "start": 10,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "iam looking for an expensive restaurant and it should be in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 64,
+          "end": 69
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 19,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves bistro food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "bistro",
+          "start": 40,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "how about turkish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "turkish",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in any area that serves bistro food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "bistro",
+          "start": 52,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "turkish type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "turkish",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "uh id like steakhouse food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "steakhouse",
+          "start": 11,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "uh how about turkish type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "turkish",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "un unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 3,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "greek",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "uh italian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking a restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 31,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "belgian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "belgian",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "gastropub",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "moderately restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "restaurant east",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "greek food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant that serves canapes food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "canapes",
+          "start": 58,
+          "end": 65
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town that serves african food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "african",
+          "start": 66,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "text": "i want to find an expensive restaurant that serves swedish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "swedish",
+          "start": 51,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "how about korean",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want to find a restaurant in the center and it should serve lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 62,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "text": "a restaurant south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 13,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "moderate price range please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "cheap european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "expensive european",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant serving fusion food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "fusion",
+          "start": 46,
+          "end": 52
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "breath can i get a restaurant serving chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 38,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "what about the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 15,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "can i find an expensive restaurant that serves traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 47,
+          "end": 58
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 14,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "serving modern european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 8,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "can i have a seafood restaurant please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "seafood",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "looking for a restaurant that serves lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 37,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 46,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant serving fusion food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "fusion",
+          "start": 54,
+          "end": 60
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 53,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "i want to find a restaurant serving world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 36,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "text": "how about spanish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moroccan restaurant in the center of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 17,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "im looking for a thai restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 17,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "how about moderately priced thai food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "a restaurant cheap north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 13,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 26,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "european food any price",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant on the east part of town that serves scandinavia food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "scandinavian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "how about chinese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i need cheap hungarian restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "entity": "cuisine",
+          "value": "hungarian",
+          "start": 13,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "moderately priced serving gastro pub",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant serving world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 29,
+          "end": 34
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 2,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant in the east",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 53,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "im looking for world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "moderately pri",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "catalan",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "cheap jamaican",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "italian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want a restaurant serving greek food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "how about korean type food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "i want a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 33,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "uh a cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 29,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves gastropub food any price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 40,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town that serves belgian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "belgian",
+          "start": 66,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "text": "creative food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "creative",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "moderate restaurant kosher food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "entity": "cuisine",
+          "value": "kosher",
+          "start": 20,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "restaurant any area japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 20,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 21,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "fancy restaurant moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 17,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "a restaurant in the east part of town that serves caribbean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "caribbean",
+          "start": 50,
+          "end": 59
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 20,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "restaurant in the west part of town that serves airitran food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "moderately priced restaurant serving indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 37,
+          "end": 43
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "cheap italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 6,
+          "end": 13
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "christmas food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "christmas",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurants",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "cuban food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "i would like to find an expensive restaurant that serves corsica food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "corsica",
+          "start": 57,
+          "end": 64
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 24,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "uh how about north american",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 36,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "i would like to find a moderately priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 23,
+          "end": 33
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 59,
+          "end": 64
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town serving jamaican food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "jamaican",
+          "start": 62,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "text": "id like to find a moderately priced restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 18,
+          "end": 28
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 54,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant in the east town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 46,
+          "end": 50
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant in the east of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 46,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "the south",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town that serves traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 65,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "text": "what about indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "i want to find a restaurant that serves world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 40,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "what about french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant serving romanian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "romanian",
+          "start": 36,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "text": "what about vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 11,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town that serves malaysian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 66,
+          "end": 75
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "what about portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 11,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the center of town that serves african food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "african",
+          "start": 62,
+          "end": 69
+        }
+      ]
+    },
+    {
+      "text": "moderately priced in the west",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "international food in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 0,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant that serves tuscan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "tuscan",
+          "start": 58,
+          "end": 64
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "how about uh gastropub",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i need a cheap restaurant that serves indonesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indonesian",
+          "start": 38,
+          "end": 48
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "how about indian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town thats expensive",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant serving malaysian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 47,
+          "end": 56
+        }
+      ]
+    },
+    {
+      "text": "how about british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "i want a restaurant in the west part of town that serves australian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "entity": "cuisine",
+          "value": "australian",
+          "start": 57,
+          "end": 67
+        }
+      ]
+    },
+    {
+      "text": "i want vegetarian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vegetarian",
+          "start": 7,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "how about portuguese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want malaysian food in any area",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 7,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "i want expensive food in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 29,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town serving indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 62,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "is there anything in the cheap price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 25,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "i want a moderately priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant serving asian oriental food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 36,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 41,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town serving malaysian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 62,
+          "end": 71
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "how about asian oriental food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 10,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town serving japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 61,
+          "end": 69
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "want something in the south side of town thats moderately priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 47,
+          "end": 57
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 22,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "looking for afghan good",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 12,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "looking for spanish food in the center of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 12,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "looking for something moderately priced in the north side of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 22,
+          "end": 32
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 47,
+          "end": 52
+        }
+      ]
+    },
+    {
+      "text": "looking for cheap barbecue food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "expensive european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "looking for lebanese food in the city center",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 12,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "looking for moderately priced russian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 12,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "russian",
+          "start": 30,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "text": "what about chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 11,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "hello im looking for an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 24,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "crossover food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "crossover",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "how about modern european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 10,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "i would like modern european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 13,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "looking for a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 38,
+          "end": 42
+        }
+      ]
+    },
+    {
+      "text": "looking for an expensive restaurant that serves indonesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indonesian",
+          "start": 48,
+          "end": 58
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 15,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "is there a restaurant serving british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 30,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "text": "looking for a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 14,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "polish",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "european",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want a moderately priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 45,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "i want a moderately priced restaurant that serves mediterranean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "mediterranean",
+          "start": 50,
+          "end": 63
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "how about cheap",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want christmas food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "christmas",
+          "start": 7,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "what about north american type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "north american",
+          "start": 11,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "i want a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 45,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves african food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "african",
+          "start": 40,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "id like to find a restaurant that serves afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 41,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "id like an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 11,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "id like to find a restaurant that serves korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 41,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "im looking for something moderately priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 25,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "im looking for thai",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "west side",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "thai food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "looking for something on the south side",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 29,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "text": "im looking for something expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "something serving swiss food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "swiss",
+          "start": 18,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "what about british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 11,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "im looking for something cheap",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "singaporean",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "indian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "hungarian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "belgian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 18,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "irish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "irish",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "indian type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "a moderately priced restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 38,
+          "end": 43
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 2,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "price over food west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 16,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "uh i want cantonese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "cantonese",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "how about thai food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "a moderate restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 29,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "cantonese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "cantonese",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "north american food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "north american",
+          "start": 0,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "south of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "east of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "west of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "id like to find a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 18,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "yea im looking for a really cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 52,
+          "end": 56
+        }
+      ]
+    },
+    {
+      "text": "what about international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 11,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the west park of town that serves australian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "entity": "cuisine",
+          "value": "australian",
+          "start": 65,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "text": "how about vietnamese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for an expensive restaurant that serves signaporean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant that serves unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 51,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in any area that serves russian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "russian",
+          "start": 52,
+          "end": 59
+        }
+      ]
+    },
+    {
+      "text": "north american",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want an expensive restaurant that serves sea food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "i want an expensive restaurant that serves polish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "entity": "cuisine",
+          "value": "polish",
+          "start": 43,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "how about italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "i would like steakhouse food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "steakhouse",
+          "start": 13,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the west part of town serving italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 61,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant serving french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 47,
+          "end": 53
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town serving austrian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "austrian",
+          "start": 62,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "text": "how about indian type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "im looking for moderately priced restaurant serving austrian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "austrian",
+          "start": 52,
+          "end": 60
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 15,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "how about gastropub type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town serving lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 62,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "text": "how about italian type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant serving modern european type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 42,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant serving international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 36,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "international",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i need to find a restaurant in the north part of town that serves jamaican food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "jamaican",
+          "start": 66,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "text": "how about an indian restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 13,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "i need a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "find me a cheap vietnamese restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 16,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "looking for a japanese restaurant in the center",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 14,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "i need a cuban restaurant that is moderately priced",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 34,
+          "end": 44
+        },
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 9,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "what about a spanish restuarant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 45,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "canapes food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "canapes",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "how about indian type food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in any area that serves polynesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "polynesian",
+          "start": 52,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "text": "how about modern european type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 10,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "that serves corsica",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "the indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 4,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "how about korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "i would like australian foo",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "australian",
+          "start": 13,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "i want a moderate priced restaurant in the south of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 9,
+          "end": 17
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 43,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "text": "looking for a moderately priced restaurant and it needs to be in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 14,
+          "end": 24
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 69,
+          "end": 74
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves swiss food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "swiss",
+          "start": 40,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "what about vietnamese type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 11,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "looking for a cheap restaurant that serves creative food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "entity": "cuisine",
+          "value": "creative",
+          "start": 43,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "text": "uh are there any that serves mediterranean",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "a restaurant with afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 18,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "uh a restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 23,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "how about portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "restaurant north part of town fast food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 11,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "restaurant south part of town english food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "english",
+          "start": 30,
+          "end": 37
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 11,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "restaurant north part of town seafood",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 11,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "in the west",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "tuscan food south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "tuscan",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "i want a restaurant that serves french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 32,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "i want to find a restaurant in the center that serves lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 54,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "text": "um i dont care i just want traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 27,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "how about french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for an expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 21,
+          "end": 30
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 49,
+          "end": 54
+        }
+      ]
+    },
+    {
+      "text": "in cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 3,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "could i have a moderately priced restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 15,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "swedish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "swedish",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "moderate priced restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 34,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "polynesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "polynesian",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "can i have greek food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 11,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "id like to find a restaurant in the north part of town that serves german food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 36,
+          "end": 41
+        },
+        {
+          "entity": "cuisine",
+          "value": "german",
+          "start": 67,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "text": "how about french",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for romanian food in the expensive price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 36,
+          "end": 45
+        },
+        {
+          "entity": "cuisine",
+          "value": "romanian",
+          "start": 15,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "moderately priced restaurant serving moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 37,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town serving catalan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "catalan",
+          "start": 61,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "expensive food in the south of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant in the east of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "i need a restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 27,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the west part of town that serves canape food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for an restaurant in the center that serves korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 58,
+          "end": 64
+        }
+      ]
+    },
+    {
+      "text": "id like a restaurant in any area that it serves canapes",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i would like a restaurant that serves korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 38,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "text": "id like an expensive restaurant that serves bat food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 11,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "could i have a cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "id like a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 46,
+          "end": 50
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "id like a moderately priced restaurant that serves cuban food please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "looking for a cheap restaurant that serves steak house food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 14,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "japanese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "turkish",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i am looking for a restaurant serving afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 38,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "text": "moderate price",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "uh cheap restaurant in north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 23,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town and danish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "entity": "cuisine",
+          "value": "danish",
+          "start": 58,
+          "end": 64
+        }
+      ]
+    },
+    {
+      "text": "uh how about italian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "expensive restaurant serving portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 29,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "noise restaurant west part of town danish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "entity": "cuisine",
+          "value": "danish",
+          "start": 35,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "text": "tuscan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "tuscan",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "south part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "english food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "english",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "i want to find a cheap restaurant and it should serve scandinavian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "scandinavian",
+          "start": 54,
+          "end": 66
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "mediterranean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "mediterranean",
+          "start": 0,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "moderately priced restaurant that serves thai food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 41,
+          "end": 46
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "south part of town please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurants",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "ah im looking for a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 20,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "how bout one that serves portuguese food and is cheap",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 25,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves polynesian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "polynesian",
+          "start": 40,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 40,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "id like a restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "could i have a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "the north",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "can i have a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 13,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "restaurant moderate price",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 11,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "afghan",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town that serves pan asian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "restaurant in any area international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 23,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "text": "fusion food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "fusion",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "vietnamese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "north north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "singaporean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "singaporean",
+          "start": 0,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "corsica food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "corsica",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "gastropub food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 40,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "for a restaurant in any area with international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 34,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "swiss",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i would like a cheap restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 39,
+          "end": 44
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "the east",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i would like a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "id like moderately priced moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 8,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "yea i would like korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 17,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "i want a restaurant in the center that serves seafood",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want a restaurant in the north part of town that serves vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 58,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "text": "what about in the west area",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the east part that serves creative food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        },
+        {
+          "entity": "cuisine",
+          "value": "creative",
+          "start": 57,
+          "end": 65
+        }
+      ]
+    },
+    {
+      "text": "how about a restaurant in the east part of town that serves indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 60,
+          "end": 66
+        }
+      ]
+    },
+    {
+      "text": "looking for a restaurant in the south part of town that serves australian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 32,
+          "end": 37
+        },
+        {
+          "entity": "cuisine",
+          "value": "australian",
+          "start": 63,
+          "end": 73
+        }
+      ]
+    },
+    {
+      "text": "what about a restaurant that serves chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 36,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 40,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "text": "moderately priced in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 25,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "mexican",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "bistro",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "dont care expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want to find a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in any area it should serve gastropub food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 56,
+          "end": 65
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in central it should serve japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 55,
+          "end": 63
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant that serves german food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "entity": "cuisine",
+          "value": "german",
+          "start": 29,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant that serves sea food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "looking for a moderately priced restaurant that serves unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 14,
+          "end": 24
+        },
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 55,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "text": "what about european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 11,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant that serves vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 58,
+          "end": 68
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves danish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "danish",
+          "start": 40,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "i am looking for a restaurant in the south part of town and it should serve cantonese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 37,
+          "end": 42
+        },
+        {
+          "entity": "cuisine",
+          "value": "cantonese",
+          "start": 76,
+          "end": 85
+        }
+      ]
+    },
+    {
+      "text": "i am looking for an expensive restaurant that serves",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 20,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "text": "in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "like to find a restaurant in the east part of town and it should serve indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 71,
+          "end": 77
+        }
+      ]
+    },
+    {
+      "text": "welsh food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "welsh",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "serves halal food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "halal",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "asian oriental food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 0,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "restaurant in the west part of town that serves cuban food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 48,
+          "end": 53
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant in the east part town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 53,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "i want to find a expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant that serves greek food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "greek",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "how about asian oriental",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a moderately priced restaurant that serves traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 58,
+          "end": 69
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "uh world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 3,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "restaurant in the north part of town that serves hungarian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "entity": "cuisine",
+          "value": "hungarian",
+          "start": 49,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "text": "what asian oriental type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 5,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "how about asian oriental type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "asian oriental",
+          "start": 10,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "african food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "african",
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant that serves vegetarian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vegetarian",
+          "start": 29,
+          "end": 39
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "restaurant in west part of town serving corsica food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "corsica",
+          "start": 40,
+          "end": 47
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 14,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "venetian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "venetian",
+          "start": 0,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "how about korean foo",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 10,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "noise looking for an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 21,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "jamaican",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant that serves irish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "irish",
+          "start": 51,
+          "end": 56
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 15,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "noise looking for an expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 49,
+          "end": 54
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 21,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "i want to find a cheap re",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the center that serves turkish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "turkish",
+          "start": 54,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant and it should be in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 58,
+          "end": 63
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant that serves german food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "german",
+          "start": 46,
+          "end": 52
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "what about asian oriental",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a cheap restaurant that serves vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 46,
+          "end": 56
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant that serves afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 40,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 56,
+          "end": 60
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 20,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "noise um in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 16,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "noise ah gastropub food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 9,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "im looking for a malaysian restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "malaysian",
+          "start": 17,
+          "end": 26
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 45,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "um what about italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 14,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "i want a restaurant in the moderate price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 27,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "text": "what about modern european type food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "modern european",
+          "start": 11,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "ah centre",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "world",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i would like a cheap restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 39,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "text": "looking for a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 38,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the east part of town that serves afghan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "afghan",
+          "start": 65,
+          "end": 71
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "how bout chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 9,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "looking for an expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 43,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant that serves moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 58,
+          "end": 66
+        }
+      ]
+    },
+    {
+      "text": "how about spanish types of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "i need a restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 27,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "how about english food in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "english",
+          "start": 10,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant uh serving halal food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "halal",
+          "start": 57,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "text": "um what about european",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for swedish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "swedish",
+          "start": 15,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "uh what about portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 14,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "ok how about chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "hello chinese type of food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 6,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "i need a restaurant in the center of town that includes international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 56,
+          "end": 69
+        }
+      ]
+    },
+    {
+      "text": "i need a cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 33,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "text": "i need a restaurant in the center of town that serves spanish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 54,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "text": "i need a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 33,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant that serves world food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "world",
+          "start": 50,
+          "end": 55
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant in the north of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 45,
+          "end": 50
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant in the west part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "im looking for something serves japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 32,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the west part of town that serves moroccan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "moroccan",
+          "start": 65,
+          "end": 73
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "is there one that serves indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 25,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "im looking for a expensive restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "any kind of food id like a cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 27,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "text": "the south part of town id like a restaurant that serves traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 56,
+          "end": 67
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "its a restaurant in the south of town that serves italian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 50,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "id like an expensive restaurant that serves mediteranean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 11,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for a korean restaurant in the expensive price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 42,
+          "end": 51
+        },
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 17,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "north part of town serving gastropub food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 27,
+          "end": 36
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "what about a chinese restaurant in the north of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "im looking for tuscan food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "tuscan",
+          "start": 15,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "portuguese",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "restaurant in the east part of town serving basque food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "basque",
+          "start": 44,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "text": "cheap resataurant serving unintelligible food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "how about vietnamese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "vietnamese",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced labonese restaruant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "cheap restaurant east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "moderately priced in south part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 21,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 20,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "hi im looking for a cheap restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 20,
+          "end": 25
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 44,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "hi looking for a moderately priced restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "how about gastropub food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "gastropub",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "i want a cheap restaurant that serves unusual food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "unusual",
+          "start": 38,
+          "end": 45
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 9,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "text": "how european",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "i want a british restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "hungarian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "hungarian",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "im looking for lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 15,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the west part of town that serves jamaican food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "jamaican",
+          "start": 65,
+          "end": 73
+        },
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "what about thai food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the center part of town that serves european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 67,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "text": "south expensive",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "cheap price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "i need a moderately priced restaurant that serves bask food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 9,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "im looking for a moderately priced restaurant and it should be in the north of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 70,
+          "end": 75
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "i want to find a moderately priced restaurant that serves cuban food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        },
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 58,
+          "end": 63
+        }
+      ]
+    },
+    {
+      "text": "moderately priced food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "text": "okay how about a gastropub",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "uh cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 3,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "text": "um moderate",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "uh okay how about french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 18,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "text": "expensive restaurant in the south part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "breath im looking for a restaurant that serves cuban food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "cuban",
+          "start": 47,
+          "end": 52
+        }
+      ]
+    },
+    {
+      "text": "can i find a restaurant that serves international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 36,
+          "end": 49
+        }
+      ]
+    },
+    {
+      "text": "im looking for portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 15,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "text": "in the west part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "west",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the south part of town serving korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 62,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 41,
+          "end": 45
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the north part of town serving jamaican food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "jamaican",
+          "start": 62,
+          "end": 70
+        },
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in any area that serves welsh food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "welsh",
+          "start": 52,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "im looking for a restaurant in the center that serves caribbean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "caribbean",
+          "start": 54,
+          "end": 63
+        }
+      ]
+    },
+    {
+      "text": "how about international food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "international",
+          "start": 10,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "im looking for a cheap pan asian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "okay is there any portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 18,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "north part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "text": "i want a restaurant in the east part of town that serves singaporean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "singaporean",
+          "start": 57,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 27,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "what about indian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a moderately priced restaurant in the south of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 53,
+          "end": 58
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "um im looking for a restaurant in the center part of town that serves lebanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "lebanese",
+          "start": 70,
+          "end": 78
+        }
+      ]
+    },
+    {
+      "text": "thai type food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "thai",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "text": "moderately",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "breath i want to find a restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 42,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "text": "i want to find a restaurant in the north part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "north",
+          "start": 35,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "text": "um in the south part of town and its cheap",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 10,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "text": "um how about chinese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "chinese",
+          "start": 13,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "the south part",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "south",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "text": "um an expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a cheap restaurant with spanish food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 39,
+          "end": 46
+        }
+      ]
+    },
+    {
+      "text": "im looking for traditional food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "traditional",
+          "start": 15,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "text": "what about korean food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "korean",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "text": "german",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for belgian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "belgian",
+          "start": 15,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "what about modern european",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for corsica food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "corsica",
+          "start": 15,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "text": "im looking for japanese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "japanese",
+          "start": 15,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "text": "what is a good cheap restaurant that serves portuguese food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "portuguese",
+          "start": 44,
+          "end": 54
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "an expensive restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 3,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "yea im looking for a really cheap restaurant",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "oh i need to be in the north",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "what about italian",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "what about expensive",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a restaurant in the east part of the town with indian asian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 62,
+          "end": 68
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "text": "im looking for an italian restaurant in the east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 18,
+          "end": 25
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 44,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "text": "french",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "im looking for a moderately priced restaurant that serves european food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "european",
+          "start": 58,
+          "end": 66
+        },
+        {
+          "entity": "price",
+          "value": "moderately",
+          "start": 17,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "im looking for an expensive restaurant and it should be east part of town",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 18,
+          "end": 27
+        },
+        {
+          "entity": "location",
+          "value": "east",
+          "start": 56,
+          "end": 60
+        }
+      ]
+    },
+    {
+      "text": "can you make a restaurant reservation with italian food for eight in bombay in a expensive price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 81,
+          "end": 90
+        },
+        {
+          "entity": "people",
+          "value": "eight",
+          "start": 60,
+          "end": 65
+        },
+        {
+          "entity": "cuisine",
+          "value": "italian",
+          "start": 43,
+          "end": 50
+        },
+        {
+          "entity": "location",
+          "value": "bombay",
+          "start": 69,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "text": "instead could it be with indian cuisine",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 25,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "actually i would prefer for six people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "people",
+          "value": "six",
+          "start": 28,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "actually i would prefer in madrid",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "may i have a table in a moderate price range with spanish food in bombay for two people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "bombay",
+          "start": 66,
+          "end": 72
+        },
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 24,
+          "end": 32
+        },
+        {
+          "entity": "people",
+          "value": "two",
+          "start": 77,
+          "end": 80
+        },
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 50,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "text": "i'd like to book a table in a cheap price range for six people with spanish cuisine in madrid",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 30,
+          "end": 35
+        },
+        {
+          "entity": "people",
+          "value": "six",
+          "start": 52,
+          "end": 55
+        },
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 68,
+          "end": 75
+        }
+      ]
+    },
+    {
+      "text": "can you make a restaurant reservation in a cheap price range in london with spanish food for eight people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 76,
+          "end": 83
+        },
+        {
+          "entity": "price",
+          "value": "cheap",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "entity": "people",
+          "value": "eight",
+          "start": 93,
+          "end": 98
+        },
+        {
+          "entity": "location",
+          "value": "london",
+          "start": 64,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "text": "can you book a table in rome in a moderate price range with british food for four people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "location",
+          "value": "rome",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 60,
+          "end": 67
+        },
+        {
+          "entity": "people",
+          "value": "four",
+          "start": 77,
+          "end": 81
+        },
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 34,
+          "end": 42
+        }
+      ]
+    },
+    {
+      "text": "i'd like to book a table for two in madrid with spanish cuisine in a moderate price range",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "people",
+          "value": "two",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 48,
+          "end": 55
+        },
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 69,
+          "end": 77
+        },
+        {
+          "entity": "location",
+          "value": "madrid",
+          "start": 36,
+          "end": 42
+        }
+      ]
+    },
+    {
+      "text": "can you book a table in london in a expensive price range with spanish cuisine for two",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "expensive",
+          "start": 36,
+          "end": 45
+        },
+        {
+          "entity": "cuisine",
+          "value": "spanish",
+          "start": 63,
+          "end": 70
+        },
+        {
+          "entity": "location",
+          "value": "london",
+          "start": 24,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "text": "actually i would prefer for eight people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "people",
+          "value": "eight",
+          "start": 28,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "text": "i love indian food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "indian",
+          "start": 7,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "in a moderate price range please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "price",
+          "value": "moderate",
+          "start": 5,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "text": "instead could it be with french food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 25,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "text": "with french cuisine",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "french",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "text": "for six please",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "people",
+          "value": "six",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "text": "actually i would prefer in bombay",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "instead could it be for four people",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "people",
+          "value": "four",
+          "start": 24,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "with british food",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "british",
+          "start": 5,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "text": "we will be eight",
+      "intent": "inform",
+      "entities": []
+    },
+    {
+      "text": "西餐如何",
+      "intent": "inform",
+      "entities": [
+        {
+          "entity": "cuisine",
+          "value": "西餐",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "text": "right",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes knocking",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yeah",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes that serves korean food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes in the moderately priced",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes id like an expensive restaurant in the east part of town",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "um yes",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "thats correct gastropub food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes spanish restaurant",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes barbecue food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "correct",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yea",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes right",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes italian food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes and in french please",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes can i have can i get swedish food in any area",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yeah a cheap restaurant serving international food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes can i have",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes that sells korean food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes south part of town",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "ye",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yea thank you good bye",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "right on good bye peace",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes in the west part of town",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes i am in the east part of town right now and i am looking for any place that serves indonesian food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes can i find a moderately priced restaurant and it serve it should serve brazilian food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes im looking for a cheap restaurant that serves medetanian food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes can i find a restaurant in the east part of town that serves chinese",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes i need the north part of town",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes restaurant that serves danish food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes im looking for a cheap restaurant in the west part of town",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes a cheap restaurant",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yes im looking for malaysian food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes and i dont care about the price range",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yes yes",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "uh yeah im looking for a restaurant in the south part of town and that serves kosher food",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "yeah i need to find",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "let's do it",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "i love that",
+      "intent": "affirm",
+      "entities": []
+    },
+    {
+      "text": "thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you noise",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "ah thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "okay thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "okay thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "okay cool uh good bye thank you",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "um okay thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "breath thank you very much goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "noise thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you goodbye noise thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you and good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "unintelligible thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thank you goodbye noise",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "sorry about my mistakes thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "uh thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "uh okay thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "noise thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "breath thank you goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "and thats all thank you and good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thanks goodbye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "okay thank you",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "um thank you good bye",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "you rock",
+      "intent": "thankyou",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "oh no and cheap",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no im looking for pan asian",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no indian food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no chinese",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no thai",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "uh no",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no center",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no thank you good bye",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no new selection",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no im looking in the south of the town",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no british food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no south part of town",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "breath no american food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no i want american food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no danish food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no north",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no spanish food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no im looking for one that serves vietnamese food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no i want halal food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no spanish",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no hungarian food",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no the south part",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no thanks",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "no this does not work for me",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "do you have something else",
+      "intent": "deny",
+      "entities": []
+    },
+    {
+      "text": "do you have its phone number",
+      "intent": "request_info",
+      "entities": [
+        {
+          "entity": "info",
+          "value": "phone",
+          "start": 16,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "text": "may i have the phone number of the restaurant",
+      "intent": "request_info",
+      "entities": [
+        {
+          "entity": "info",
+          "value": "phone number",
+          "start": 15,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "text": "你有他们的地址吗",
+      "intent": "request_info",
+      "entities": [
+        {
+          "entity": "info",
+          "value": "地址",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    }
+  ],
+  "entity_synonyms": [
+    {
+      "value": "low",
+      "synonyms": [
+        "pianyi",
+        "a",
+        "di",
+        "便宜",
+        "lo",
+        "低"
+      ]
+    },
+    {
+      "value": "地点",
+      "synonyms": [
+        "地方"
+      ]
+    },
+    {
+      "value": "new york",
+      "synonyms": [
+        "纽约"
+      ]
+    },
+    {
+      "value": "address",
+      "synonyms": [
+        "地址"
+      ]
+    }
+  ],
+  "regex_features": []
+}

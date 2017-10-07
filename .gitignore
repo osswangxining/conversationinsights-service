@@ -27,4 +27,5 @@ hs_err_pid*
 
 *.prefs
 
-.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/
+target/
